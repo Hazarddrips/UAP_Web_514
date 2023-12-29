@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kusir</title>
+</head>
+
+<body>
+
+    <h1>Toko</h1>
+
+    <table id="stockTable">
+        <thead>
+            <tr>
+                <th>Kode Barang</th>
+                <th>Nama Barang</th>
+                <th>Harga</th>
+            </tr>
+        </thead>
+        <tbody id="stockTableBody"></tbody>
+    </table>
+
+    <form id="beliForm" onsubmit="prosesPembelian(); return false;"> Form 
+        <H1>Kasir</H1> <br>
+        <label for="beliKodeBarang"> Kode Barang :</label>
+        <input type="text" id="beliKodeBarang" placeholder="Masukan Kode">
+        <br>
+
+        <label for="jumlahBeli"> Jumlah Barang:</label>
+        <input type="number" id="jumlahBeli" placeholder="Masukan Jumlah">
+        <br>
+
+        <button type="submit">Beli</button>
+    </form>
+</body>
+
+<script src="script.js"></script>
+
+</html>
